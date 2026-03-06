@@ -8,8 +8,8 @@ void selection_sort(int a[], int n,long long &comparison){
         for(int j = i+1;++comparison&&j<n;j++){
             if(++comparison&&a[minIndex] > a[j]) minIndex = j;
         }
-        if(minIndex != i)
-        swap(a[minIndex],a[i]);
+        if(++comparison&& minIndex != i)
+        swap( a[minIndex],a[i]);
     }
 }
 void selection_sort(int a[], int n){
@@ -22,3 +22,4 @@ void selection_sort(int a[], int n){
         swap(a[minIndex],a[i]);
     }
 }
+
