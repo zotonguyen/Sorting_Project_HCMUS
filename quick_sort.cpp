@@ -56,15 +56,4 @@ void quick_sort (int a[], int first, int last, long long&& comparison) {
     quick_sort (a, pivotIndex + 1, last);
 }
 
-int main (){
-    int n = 5;
-    int a[n] = {0,2,1,4,3}; 
-    for (int i = 0; i < 5; i++) {
-        quick_sort (a, 0, 4);
-    }
 
-    for (int i = 0; i < 5; i++) {
-        cout << a[i] << " ";
-    }
-    return 0;
-}
