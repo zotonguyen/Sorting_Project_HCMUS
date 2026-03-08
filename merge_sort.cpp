@@ -85,16 +85,3 @@ void merge_sort(int a[], int n, long long& comparison ) {
 
     Merge (left, mid, right, n - mid, a, comparison);
 }
-
-int main (){
-    int n = 5;
-    int a[n] = {0,2,1,4,3}; 
-    for (int i = 0; i < 5; i++) {
-        merge_sort (a, n);
-    }
-
-    for (int i = 0; i < 5; i++) {
-        cout << a[i] << " ";
-    }
-    return 0;
-}
