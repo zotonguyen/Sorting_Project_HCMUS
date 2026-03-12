@@ -5,11 +5,11 @@ using namespace std;
 void insertionSort(int a[], int n)
 {
 
-	for (int i = 0; ++comparison && i < n; i++)
+	for (int i = 0; i < n; i++)
 	{
 		int key = a[i];
 		int j = i - 1;
-		while (++comparison && j >= 0 && ++comparison && a[j] > key)
+		while (j >= 0 && a[j] > key)
 		{
 
 			a[j + 1] = a[j];
@@ -87,14 +87,13 @@ void flashSort(int a[], int n)
 	insertionSort(a, n);
 }
 //compare
-void insertionSort(int a[], int n, long long & comparison)
+void insertionSort2(int a[], int n, long long &comparison)
 {
-
-	for (int i = 0; i < n; i++)
+	for (int i = 0; ++comparison && i < n; i++)
 	{
 		int key = a[i];
 		int j = i - 1;
-		while (j >= 0 && a[j] > key)
+		while (++comparison && j >= 0 && ++comparison && a[j] > key)
 		{
 
 			a[j + 1] = a[j];
@@ -104,7 +103,7 @@ void insertionSort(int a[], int n, long long & comparison)
 	}
 }
 
-void flashSort(int a[], int n, long long &conparison)
+void flashSort2(int a[], int n, long long &conparison)
 {
   comparison = 0;
   
@@ -171,5 +170,5 @@ void flashSort(int a[], int n, long long &conparison)
 
 	delete[] L;
 
-	insertionSort(a, n);
+	insertionSort2(a, n,comparison);
 }
