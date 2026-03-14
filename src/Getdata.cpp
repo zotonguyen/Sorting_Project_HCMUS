@@ -51,7 +51,7 @@ void RunSortAlgorithm(int algorithmIndex, int a[], int n){
         radixSort(a,n);
         break;
         case 8:
-        //counting
+        counting_Sort(a,n);
         break;
         case 9:
         binaryInsertion(a,n);
@@ -92,7 +92,7 @@ void RunSortComparison(int algorithmIndex, int a[], int n,long long& comp){
         radixSort(a,n,comp);
         break;
         case 8:
-        //counting
+        counting_Sort(a,n,comp);
         break;
         case 9:
         binaryInsertion(a,n,comp);
