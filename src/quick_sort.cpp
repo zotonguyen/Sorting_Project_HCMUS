@@ -34,7 +34,7 @@ int Partition( int a[], int first, int last, long long& comparison) {
     int lastS1 = first;
     int firstUnknow = first + 1;
     while (++comparison && firstUnknow <= last) {
-        if (a[firstUnknow] <= pivot) {
+        if (++ comparison && a [firstUnknow] <= pivot) {
             lastS1++;
             swap (a[lastS1], a[firstUnknow]);
 
@@ -50,7 +50,7 @@ int Partition( int a[], int first, int last, long long& comparison) {
 }
 
 void quick_sort (int a[], int first, int last, long long& comparison) {
-    if (first >= last) return;
+    if (++ comparison && first >= last) return;
     int pivotIndex = Partition (a, first, last, comparison);
     quick_sort (a, first, pivotIndex - 1, comparison);
     quick_sort (a, pivotIndex + 1, last, comparison);
