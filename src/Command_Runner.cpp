@@ -239,7 +239,8 @@ static void RunC5(const Command &command)
     GenerateData(a, n, Datatype);
     for (int i = 0; i < n; i++)
         b[i] = a[i];
-    ofstream fout("output.txt");
+    ofstream fout("input.txt");
+    fout << n << endl;
     for (int i = 0; i < n; i++)
         fout << a[i] << ' ';
     fout.close();
