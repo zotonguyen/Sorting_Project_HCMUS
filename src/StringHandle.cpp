@@ -11,6 +11,6 @@ bool IsOutputParam(const char*s){
     return strcmp(s,"-time" ) == 0 || strcmp(s,"-comp") == 0|| strcmp(s,"-both") == 0;
 }
 bool IsInputOrder(const char *s){
-    return strcmp(s,"-nsorted") == 0 || strcmp(s,"-rev") == 0||strcmp(s,"-rand") || strcmp(s,"-sorted") == 0;
+    return strcmp(s,"-nsorted") == 0 || strcmp(s,"-rev") == 0||strcmp(s,"-rand") == 0 || strcmp(s,"-sorted") == 0;
 }
 
