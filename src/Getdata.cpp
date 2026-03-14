@@ -45,7 +45,7 @@ void RunSortAlgorithm(int algorithmIndex, int a[], int n){
         merge_sort(a,n);
         break;
         case 6:
-        quick_sort(a,0,n);
+        quick_sort(a,0,n-1);
         break;
         case 7:
         radixSort(a,n);
@@ -86,7 +86,7 @@ void RunSortComparison(int algorithmIndex, int a[], int n,long long& comp){
         merge_sort(a,n,comp);
         break;
         case 6:
-        quick_sort(a,0,n,comp);
+        quick_sort(a,0,n-1,comp);
         break;
         case 7:
         radixSort(a,n,comp);
