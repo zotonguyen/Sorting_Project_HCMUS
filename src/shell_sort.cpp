@@ -18,8 +18,9 @@ void shell_sort (int a[], int n) {
 }
 
 void shell_sort (int a[], int n, long long& comparison) {
-    for (int gap = n/2; gap > 0; gap /= 2) {
-        for (int i = gap; i < n; i++) {
+    comparison = 0;
+    for (int gap = n/2; ++ comparison && gap > 0; gap /= 2) {
+        for (int i = gap; ++ comparison && i < n; i++) {
             int tmp = a[i];
             int j = i;
 
@@ -31,4 +32,6 @@ void shell_sort (int a[], int n, long long& comparison) {
         }
     }
 }
+
+
 
