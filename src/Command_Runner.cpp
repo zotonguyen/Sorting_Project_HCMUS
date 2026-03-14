@@ -199,7 +199,7 @@ static void RunC4(const Command &command)
     int alg2 = GetAlgorithmIndex(command.algorithm_2);
     ifstream fin(command.inputfile);
     if (!fin.is_open())
-        cout << "ko mo dc";
+    {cout << "khong mo duoc file" ;return;}
     int n;
     fin >> n;
     int *a = new int[n];
