@@ -52,8 +52,8 @@ int Partition( int a[], int first, int last, long long& comparison) {
 void quick_sort (int a[], int first, int last, long long& comparison) {
     if (first >= last) return;
     int pivotIndex = Partition (a, first, last, comparison);
-    quick_sort (a, first, pivotIndex - 1);
-    quick_sort (a, pivotIndex + 1, last);
+    quick_sort (a, first, pivotIndex - 1, comparison);
+    quick_sort (a, pivotIndex + 1, last, comparison);
 }
 
 
