@@ -22,7 +22,7 @@ struct Command
     char algorithm_1[50];
     char algorithm_2[50];
     char inputOrder[50];
-    char inputsize=0;
+    long long inputsize=0;
     char output_param[50];
     Command(){
         mode = Mode_invalid;
