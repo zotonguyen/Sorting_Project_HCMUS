@@ -17,10 +17,10 @@ int GetAlgorithmIndex(const char*s){
 int GetGenerateData(const char*order){
      if (order == 0) return -1;
 
-    if (strcmp(order, "-sorted") == 0)  return 0;
-    if (strcmp(order, "-nsorted") == 0) return 1;
+    if (strcmp(order, "-sorted") == 0)  return 1;
+    if (strcmp(order, "-nsorted") == 0) return 3;
     if (strcmp(order, "-rev") == 0)     return 2;
-    if (strcmp(order, "-rand") == 0)    return 3;
+    if (strcmp(order, "-rand") == 0)    return 0;
 
     return -1;
 }
