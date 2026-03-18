@@ -25,10 +25,10 @@ void bubbleSort1(int a[], int n)
 void bubbleSort2(int a[], int n, long long &comparision)
 {
     comparision = 0;
-    for (int i = 0; i < n - 1; i++)
+    for (int i = 0;++comparision&& i < n - 1; i++)
     {
         bool swaped = false;
-        for (int j = n - 1; j > i; j--)
+        for (int j = n - 1; ++comparision&&j > i; j--)
         {
             if (++comparision && a[j - 1] > a[j])
             {
