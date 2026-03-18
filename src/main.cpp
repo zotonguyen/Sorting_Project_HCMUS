@@ -5,7 +5,7 @@ using namespace std;
 int main(int argc,char *argv[]){
     Command cmd;
     if(!Handle_command(argc,argv,cmd)){
-        cout << "No cmt";
+        cout << "Unknow Command";
     }
     RunCommand(cmd);
     
